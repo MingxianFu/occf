@@ -10,7 +10,7 @@ export class AppComponent {
   fullImagePath: string;
 
   constructor(){
-      console.log("mmmm" + window.location.hostname);
+      console.log("mmmm");
       this.fullImagePath = '/assets/images/cross.jpg';
   }
 
