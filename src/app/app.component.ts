@@ -7,11 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Oxford Chinese Church';
-  fullImagePath: string;
+  fullImagePath: string = '/assets/images/';
 
   constructor(){
       console.log("mmmm");
-      this.fullImagePath = '/assets/images/cross.jpg';
+      if (window.location.hostname.indexOf('localhost') == -1)
+        this.fullImagePath = '/occf/' + this.fullImagePath ; 
   }
 
   ngOnInit(){
