@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,7 +10,7 @@ export class AppComponent {
   fullImagePath: string;
 
   constructor(){
-      console.log("mmmm");
+      console.log("mmmm" + window.location.hostname);
       this.fullImagePath = '/assets/images/cross.jpg';
   }
 
