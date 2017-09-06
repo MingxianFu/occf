@@ -9,10 +9,11 @@ export class AppComponent {
   title = 'Oxford Chinese Church';
   fullImagePath: string = '/assets/images/';
 
-  constructor(){
-      console.log("mmmm");
+  constructor(){      
       if (window.location.hostname.indexOf('localhost') == -1)
-        this.fullImagePath = '/occf/' + this.fullImagePath ; 
+        this.fullImagePath = '/occf' + this.fullImagePath ; 
+
+      console.log(window.location.hostname.indexOf('localhost'));
   }
 
   ngOnInit(){
