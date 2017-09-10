@@ -3,35 +3,36 @@
     <div class="page-header">
       <div class="row">
         <div class="col-sm-2">
-          <img src="{{fullImagePath}}cross.jpg" class="img-rounded"/>
+          <img src="{{fullImagePath}}cross.jpg" class="img-rounded text-right"/>
         </div>
-        <div class="col-sm-8" colspan="2" align="center">
+        <div class="col-sm-10">
           <img src="{{fullImagePath}}occf-name.jpg" class="img-rounded" title="Chinese Christian Church, Oxford, Mississippi"/>
           <h4>Chinese Christian Church, Oxford, Mississippi</h4>
+          <div class="btn-group">
+              <a class="btn btn-primary" routerLink="/welcome"><b>Welcome&nbsp;&nbsp;</b></a>
+              <a class="btn btn-primary" routerLink="/fellowship"><b>Fellowship&nbsp;&nbsp;</b></a>
+              <a class="btn btn-primary" routerLink="/testimony"><b>Testimony&nbsp;&nbsp;</b></a>
+              <a class="btn btn-primary" routerLink="/schedule"><b>Schedule&nbsp;&nbsp;</b></a>
+              <a class="btn btn-primary" routerLink="/bibleStudy"><b>Bible Study&nbsp;&nbsp;</b></a>  
+              <a class="btn btn-primary" routerLink="/links"><b>Links&nbsp;&nbsp;</b></a>  
+            </div>
         </div>
-      </div>      
-      
+      </div>    
+    </div>   
+      <table width="1000" border="0">
 
-<table width="1000" border="0">
-  <tr><td width="10%">  </td>
+        <tr><td></td></tr>
+        <tr>
+          <td valign="top" item-width="10%">
+              <div class="btn-group"><a class="btn btn-primary" routerLink="/welcomeC"><b>欢迎来访</b></a></div><br>
+              <div class="btn-group"><a class="btn btn-primary" routerLink="/fellowshipC"><b>教会生活</b></a></div><br>
+              <div class="btn-group"><a class="btn btn-primary" routerLink="/testimonyC"><b>见证分享</b></a></div><br>
+              <div class="btn-group"><a class="btn btn-primary" routerLink="/scheduleC"><b>聚会安排</b></a></div><br>
+              <div class="btn-group"><a class="btn btn-primary" routerLink="/bibleStudyC"><b>每日读经</b></a></div><br>   
+              <div class="btn-group"><a class="btn btn-primary" routerLink="/linksC"><b>相关链接</b></a></div><br>                         
+            </td>
+            <td align="left"><router-outlet></router-outlet></td>
+          </tr>  
+        </table>
 
-      <td class="btn-group">
-        <a class="btn btn-primary" routerLink="/welcome"><b>Welcome&nbsp;&nbsp;</b></a>
-        <a class="btn btn-primary" routerLink="/fellowship"><b>Fellowship&nbsp;&nbsp;</b></a>
-        <a class="btn btn-primary" routerLink="/testimony"><b>Testimony&nbsp;&nbsp;</b></a>
-        <a class="btn btn-primary" routerLink="/schedule"><b>Schedule&nbsp;&nbsp;</b></a>
-      </td>
-  </tr>
-  <tr><td></td></tr>
-  <tr><td valign="top">
-      <div class="btn-group"><a class="btn btn-primary" routerLink="/welcomeC"><b>欢迎来访</b></a></div>
-      <div class="btn-group"><a class="btn btn-primary" routerLink="/fellowshipC"><b>教会生活</b></a></div>
-      <div class="btn-group"><a class="btn btn-primary" routerLink="/testimonyC"><b>见证分享</b></a></div>
-      <div class="btn-group"><a class="btn btn-primary" routerLink="/scheduleC"><b>聚会安排</b></a></div>
-
-      </td>
-      <td align="left"><router-outlet></router-outlet></td>
-    </tr>  
-</table>
-     </div> 
 </div>

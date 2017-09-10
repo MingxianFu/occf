@@ -15,6 +15,10 @@ import { TestimonyCComponent } from './testimony-c/testimony-c.component';
 import { ScheduleCComponent } from './schedule-c/schedule-c.component';
 import { SchDataService } from './sch-data.service';
 import { FridayScheComponent } from './friday-sche/friday-sche.component';
+import { BibleStudyComponent } from './bible-study/bible-study.component';
+import { BibleStudyCComponent } from './bible-study-c/bible-study-c.component';
+import { LinksComponent } from './links/links.component';
+import { LinksCComponent } from './links-c/links-c.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,13 +30,18 @@ import { FridayScheComponent } from './friday-sche/friday-sche.component';
     FellowshipCComponent,
     TestimonyCComponent,
     ScheduleCComponent,
-    FridayScheComponent
+    FridayScheComponent,
+    BibleStudyComponent,
+    BibleStudyCComponent,
+    LinksComponent,
+    LinksCComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot([
+      { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       {
         path: 'welcome',
         component: WelcomeComponent
@@ -64,7 +73,23 @@ import { FridayScheComponent } from './friday-sche/friday-sche.component';
       {
         path: 'scheduleC',
         component: ScheduleCComponent
-      }     
+      },
+      {
+        path: 'bibleStudy',
+        component: BibleStudyComponent
+      },
+      {
+        path: 'bibleStudyC',
+        component: BibleStudyCComponent
+      },
+      {
+        path: 'links',
+        component: LinksComponent
+      },
+      {
+        path: 'linksC',
+        component: LinksCComponent
+      }       
     ])
 
   ],
