@@ -6,34 +6,33 @@
         <img src="{{fullImagePath}}cross.jpg" class="img-rounded text-right"/>
       </div>
       <div class="col-sm-8 text-center">
-        <img src="{{fullImagePath}}occf-name.jpg" class="img-rounded" title="Chinese Christian Church, Oxford, Mississippi"/>
-        <h4>Chinese Christian Church, Oxford, Mississippi</h4> 
-        <div class="btn-group btn-group-justified">
-          <a class="btn btn-primary" routerLink="/welcome"><b>Welcome</b></a>
-          <a class="btn btn-primary" routerLink="/fellowship"><b>Fellowship</b></a>
-          <a class="btn btn-primary" routerLink="/testimony"><b>Testimony</b></a>
-          <a class="btn btn-primary" routerLink="/schedule"><b>Schedule</b></a>
-          <a class="btn btn-primary" routerLink="/bibleStudy"><b>Bible Study</b></a>  
-          <a class="btn btn-primary" routerLink="/links"><b>Links</b></a>  
-        </div>
-      </div>
-    </div>
-  </div>      
-  
-      
-    <div class="row">
-        <div class="col-sm-1">
-              <div class="btn-group-vertical"><a class="btn btn-primary" routerLink="/welcomeC"><b>欢迎来访</b></a>
-              <a class="btn btn-primary" routerLink="/fellowshipC"><b>教会生活</b></a>
-              <a class="btn btn-primary" routerLink="/testimonyC"><b>见证分享</b></a>
-              <a class="btn btn-primary" routerLink="/scheduleC"><b>聚会安排</b></a>
-              <a class="btn btn-primary" routerLink="/bibleStudyC"><b>每日读经</b></a>   
-              <a class="btn btn-primary" routerLink="/linksC"><b>相关链接</b></a> 
-              </div>                      
-        </div>
-        <div class="col-sm-8 text-left" style="padding-right: 3px"><router-outlet></router-outlet>
-        </div>    
-    </div>  
-       
+        <img src="{{fullImagePath}}occf-name.jpg" class="img-rounded" title="Chinese Christian Church, Oxford, Mississippi"/>   
 
+        <h4>Chinese Christian Church, Oxford, Mississippi</h4> 
+        <div class="btn-group btn-group-justified" *ngIf="showEng">
+          <a class="btn btn-info" routerLink="/welcome"><strong>Welcome</strong></a>
+          <a class="btn btn-info" routerLink="/fellowship"><strong>Fellowship</strong></a>
+          <a class="btn btn-info" routerLink="/testimony"><strong>Testimony</strong></a>
+          <a class="btn btn-info" routerLink="/schedule"><strong>Schedule</strong></a>
+          <a class="btn btn-info" routerLink="/bibleStudy"><strong>Bible Study</strong></a>  
+          <a class="btn btn-info" routerLink="/links"><strong>Links</strong></a>  
+        </div>          
+        <div class="btn-group btn-group-justified" *ngIf="!showEng">
+          <a class="btn btn-info" routerLink="/welcomeC"><strong>欢迎来访</strong></a>
+          <a class="btn btn-info" routerLink="/fellowshipC"><strong>教会生活</strong></a>
+          <a class="btn btn-info" routerLink="/testimonyC"><strong>见证分享</strong></a>
+          <a class="btn btn-info" routerLink="/scheduleC"><strong>聚会安排</strong></a>
+          <a class="btn btn-info" routerLink="/bibleStudyC"><strong>每日读经</strong></a>   
+          <a class="btn btn-info" routerLink="/linksC"><strong>相关链接</strong></a> 
+        </div> 
+      </div>
+      <div class="col-sm-1 text-top">
+        <button class="btn btn-info" (click)="toggleLang()">{{showEng? "中文" : "English"}}</button>
+      </div> 
+    </div>
+  </div>   
+  <div class="row"> 
+    <div class="col-sm-1"></div>                           
+      <div class="col-sm-10"><router-outlet></router-outlet></div>    
+  </div>  
 </div>

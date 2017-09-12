@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Oxford Chinese Church';
   fullImagePath: string = '/assets/images/';
+  showEng: boolean = false;
 
   constructor(){      
       if (window.location.hostname.indexOf('localhost') == -1)
@@ -18,5 +19,13 @@ export class AppComponent {
 
   ngOnInit(){
 
+  }
+
+  toggleLang(){
+      if (this.showEng == true){
+         this.showEng = false; 
+      }else{
+          this.showEng = true;
+      }
   }
 }
