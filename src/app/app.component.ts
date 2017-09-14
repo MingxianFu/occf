@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ export class AppComponent {
   fullImagePath: string = '/assets/images/';
   showEng: boolean = false;
 
-  constructor(){      
+  constructor(private router: Router){      
       if (window.location.hostname.indexOf('localhost') == -1)
         this.fullImagePath = '/occf' + this.fullImagePath ; 
 
@@ -24,8 +25,10 @@ export class AppComponent {
   toggleLang(){
       if (this.showEng == true){
          this.showEng = false; 
+         this.router.navigate(['/welcomeC']);
       }else{
           this.showEng = true;
+          this.router.navigate(['/welcome']);
       }
   }
 }
