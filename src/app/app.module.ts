@@ -41,7 +41,7 @@ import { LinksCComponent } from './links-c/links-c.component';
     FormsModule,
     HttpModule,
     RouterModule.forRoot([
-      { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+      { path: '', redirectTo: 'welcomeC', pathMatch: 'full' },
       {
         path: 'welcome',
         component: WelcomeComponent
