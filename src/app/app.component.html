@@ -1,32 +1,41 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
   <div class="panel panel-default">
-    <div class="panel-heading">
+    <div class="panel-body">
       <div class="row bg-green">
-        <div class="col-sm-2 text-center" style="margin-top:5px;">
+        <div class="col-sm-3 text-center" style="margin-top:5px;">
           <img src="{{fullImagePath}}cross2.jpg" class="img-rounded text-right"/>        
         </div>
-        <div class="col-sm-6 text-center" style="margin-top:5px;">
+        <div class="col-sm-9 text-center" style="margin-top:5px;">
           <img src="{{fullImagePath}}occf-name.jpg" class="img-rounded" height="20" title="Chinese Christian Church, Oxford, Mississippi" />   
-                    <button class="btn btn-default btn-xs" (click)="toggleLang()">{{showEng? "&nbsp;&nbsp;中文&nbsp;&nbsp;" : "English"}}</button>           
+                   <button class="btn btn-default btn-xs" (click)="toggleLang()"><small>{{showEng? "&nbsp;&nbsp;中文&nbsp;&nbsp;" : "English"}}</small></button>        
 
           <h5 style="color: rgb(255,255,255)">Chinese Christian Church, Oxford, Mississippi</h5> 
         </div>   
-   
-      <div class="row" class="text-center bg-green">
-        <div>
-          <div class="btn-group btn-group-justified" *ngIf="showEng">
+      </div>
+      <div class="row text-center bg-black">
+        <div class="col-sm-12 bg-black">
+          <div class="btn-group btn-group-center" *ngIf="showEng">
             <a class="btn btn-success btn-sm bg-black" routerLink="/welcome"><strong>Welcome</strong></a>
             <a class="btn btn-success btn-sm bg-black" routerLink="/fellowship"><strong>Fellowship</strong></a>
-            <a class="btn btn-success btn-sm bg-black" routerLink="/testimony"><strong>Testimony</strong></a>
+            <a class="btn btn-success btn-sm bg-black dropdown-toggle"  data-toggle="dropdown"><strong>Testimony</strong><span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+              <li><a tabindex="-1" [routerLink]="['/testimonyC', 1]">Audio</a></li>
+              <li><a tabindex="-1" [routerLink]="['/testimonyC', 0]">Essay</a></li>
+            </ul>             
             <a class="btn btn-success btn-sm bg-black" routerLink="/schedule"><strong>Schedule</strong></a>
             <a class="btn btn-success btn-sm bg-black" routerLink="/bibleStudy"><strong>Bible Study</strong></a>  
             <a class="btn btn-success btn-sm bg-black" routerLink="/links"><strong>Links</strong></a>  
           </div>          
-          <div class="btn-group btn-group-justified" *ngIf="!showEng">
-            <a class="btn btn-success btn-sm bg-black" routerLink="/welcomeC"><strong>欢迎来访</strong></a>
+          <div class="btn-group btn-group-center" *ngIf="!showEng">
+            <a class="btn btn-success btn-sm bg-black" type="button" routerLink="/welcomeC"><strong>欢迎来访</strong></a>
             <a class="btn btn-success btn-sm bg-black" routerLink="/fellowshipC"><strong>教会生活</strong></a>
-            <a class="btn btn-success btn-sm bg-black" routerLink="/testimonyC"><strong>见证分享</strong></a>
+            <!--a class="btn btn-success btn-sm bg-black" routerLink="/testimonyC"><strong>见证分享</strong></a -->
+            <a class="btn btn-success btn-sm bg-black dropdown-toggle" data-toggle="dropdown" href="#"><strong>见证分享</strong><span class="caret"></span></a> 
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+              <li><a tabindex="-1" [routerLink]="['/testimonyC', 1]">见证分享录音</a></li>
+              <li><a tabindex="-1" [routerLink]="['/testimonyC', 0]">见证分享短文</a></li>
+            </ul>           
             <a class="btn btn-success btn-sm bg-black" routerLink="/scheduleC"><strong>聚会安排</strong></a>
             <a class="btn btn-success btn-sm bg-black" routerLink="/bibleStudyC"><strong>每日读经</strong></a>   
             <a class="btn btn-success btn-sm bg-black" routerLink="/linksC"><strong>相关链接</strong></a> 
@@ -36,6 +45,6 @@
     </div>
   </div>   
   <div class="row">                            
-      <div class="col-sm-11 text-center" style="margin-top:5px; margin-bottom:5px; margin-left:2px; margin-right:2px;"><router-outlet></router-outlet></div>    
+      <div class="col-sm-12 text-center" style="margin: 2px;"><router-outlet></router-outlet></div>    
   </div>  
 </div>

@@ -67,7 +67,7 @@ import { LinksCComponent } from './links-c/links-c.component';
         component: FellowshipCComponent
       },
       {
-        path: 'testimonyC',
+        path: 'testimonyC/:showAudio',
         component: TestimonyCComponent
       },
       {
