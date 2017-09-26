@@ -13,23 +13,25 @@
           <h5 style="color: rgb(255,255,255)">Chinese Christian Church, Oxford, Mississippi</h5> 
         </div>   
       </div>
-      <div class="row text-center bg-black">
+      <div class="row text-center">
         <div class="col-sm-12 bg-black">
           <div class="btn-group btn-group-center" *ngIf="showEng">
             <a class="btn btn-success btn-sm bg-black" routerLink="/welcome"><strong>Welcome</strong></a>
             <!--a class="btn btn-success btn-sm bg-black" routerLink="/fellowship"><strong>Fellowship</strong></a -->
-                        <button class="btn btn-success btn-sm bg-black">
-              <a class="dropdown-toggle" type="button" data-toggle="dropdown" style="color:white"><strong>Fellowship</strong><b class="caret"></b></a>
+              <button class="btn btn-sm bg-black">
+              <a class="dropdown-toggle" data-toggle="dropdown" style="color:white"><strong>Fellowship</strong><b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                   <li><a tabindex="-1" href="http://oxfordchinesechurch.org/Hymns/index.htm" target="http://oxfordchinesechurch.org/Hymns/index.htm">Hymns</a></li>
-                  <li><a tabindex="-1" href="/fellowshipC">Photo albums</a></li>
+                  <li><a tabindex="-1" routerLink="/fellowshipC">Photo albums</a></li>
               </ul>
             </button>
-            <a class="btn btn-success btn-sm bg-black dropdown-toggle"  data-toggle="dropdown"><strong>Testimony</strong><span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-              <li><a tabindex="-1" [routerLink]="['/testimonyC', 1]">Audio</a></li>
-              <li><a tabindex="-1" [routerLink]="['/testimonyC', 0]">Essay</a></li>
-            </ul>             
+            <button class="btn btn-sm bg-black">
+              <a class="dropdown-toggle"  data-toggle="dropdown" style="color:white"><strong>Testimony</strong><span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                <li><a tabindex="-1" [routerLink]="['/testimonyC', 1]">Audio</a></li>
+                <li><a tabindex="-1" [routerLink]="['/testimonyC', 0]">Essay</a></li>
+              </ul>  
+            </button>           
             <a class="btn btn-success btn-sm bg-black" routerLink="/schedule"><strong>Schedule</strong></a>
             <a class="btn btn-success btn-sm bg-black" routerLink="/bibleStudy"><strong>Bible Study</strong></a>  
             <a class="btn btn-success btn-sm bg-black" routerLink="/links"><strong>Links</strong></a>  
@@ -40,7 +42,7 @@
               <a class="dropdown-toggle" type="button" data-toggle="dropdown" style="color:white"><strong>教会生活</strong><b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                   <li><a tabindex="-1" href="http://oxfordchinesechurch.org/Hymns/index.htm" target="http://oxfordchinesechurch.org/Hymns/index.htm">赞美诗歌</a></li>
-                  <li><a tabindex="-1" href="/fellowshipC">教会相册</a></li>
+                  <li><a tabindex="-1" routerLink="/fellowshipC">教会相册</a></li>
               </ul>
             </button>
 
