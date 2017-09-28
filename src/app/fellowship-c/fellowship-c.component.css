@@ -1,0 +1,26 @@
+div{
+    padding: 2px;
+    align-content: center;
+}
+
+img{
+    height: 150px;
+}
+
+li { border-top: 0 none; cursor: pointer;}
+
+.list-group-item {
+    padding: 3px 10px
+}
+
+.panel-heading {
+    height: 20px; padding:0; cursor: pointer;
+}
+
+.panel{
+    margin: 0; padding:0
+}
+
+.panel-title{font-size: small}
+
+.list-group-item{font-size: small; font-weight: bold;}
