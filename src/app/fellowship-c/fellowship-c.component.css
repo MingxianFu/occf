@@ -24,3 +24,5 @@ li { border-top: 0 none; cursor: pointer;}
 .panel-title{font-size: small}
 
 .list-group-item{font-size: small; font-weight: bold;}
+
+td{vertical-align: text-top}
