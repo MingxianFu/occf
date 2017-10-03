@@ -1,0 +1,11 @@
+.panel-collapse{padding-left: 20px}
+
+.panel-heading {
+    height: 25px; padding: 0px; cursor: pointer;
+}
+
+.panel-title{font-size: small}
+
+.list-group-item{font-size: small; font-weight: bold;  cursor: pointer}
+
+li { border-top: 0 none; cursor: pointer; padding: 2px;}

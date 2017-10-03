@@ -1,0 +1,83 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <div id="Accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading text-left" role="tab" id="HeadingOne">
+          <b class="panel-title">
+            <a data-toggle="collapse" data-parent="#Accordion" href="#CollapseOne" aria-expanded="true" aria-controls="CollapseOne">
+            网上广播
+            </a>
+          </b>
+        </div>
+        <div id="CollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="HeadingOne">
+          <div  class="list-group text-left">
+            <li class="list-group-item" (click)="openLink('http://www.goodfriend.org/gb/index.asp')">良友之声</li>
+            <li class="list-group-item" (click)="openLink('http://portal.swtychina.com/')">世外桃源</li>        
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-success">
+        <div class="panel-heading text-left" role="tab" id="HeadingTwo">
+          <b class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#Accordion" href="#CollapseTwo" aria-expanded="false" aria-controls="CollapseTwo">
+            基督徒论坛
+            </a>
+          </b>
+        </div>
+        <div id="CollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="HeadingTwo">
+          <div  class="list-group text-left">
+            <li class="list-group-item" (click)="openLink('http://bbs.creaders.net/rainbow/')">彩虹之约</li>
+          </div>         		
+        </div>
+      </div>
+      <div class="panel panel-success">
+        <div class="panel-heading text-left" role="tab" id="HeadingThree">
+          <b class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#Accordion" href="#CollapseThree" aria-expanded="false" aria-controls="CollapseThree">
+            福音机构
+            </a>
+          </b>
+        </div>
+        <div id="CollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="HeadingThree">
+          <div  class="list-group text-left">
+            <li class="list-group-item" (click)="openLink('http://cwcnet.org/cwcsite/3.1/')">基督工人中心</li>
+            <li class="list-group-item" (click)="openLink('http://www.ccim.org/')">网络基督使团</li>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-success">
+        <div class="panel-heading text-left" role="tab" id="HeadingFour">
+          <b class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#Accordion" href="#CollapseFour" aria-expanded="false" aria-controls="CollapseFour">
+            网络资源
+            </a>
+          </b>
+        </div>
+        <div id="CollapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="HeadingFour">
+          <div  class="list-group text-left">
+            <li class="list-group-item" (click)="openLink('http://cclw.net/')">华人基督徒生活网</li>
+            <li class="list-group-item" (click)="openLink('http://www.ccbiblestudy.org/index-S.htm')">查经资料网站</li>
+            <li class="list-group-item" (click)="openLink('https://answersingenesis.org/zh/')">创世疑难解答</li>
+          </div>         		
+        </div>
+      </div>   
+      <div class="panel panel-success">
+        <div class="panel-heading text-left" role="tab" id="HeadingFive">
+          <b class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#Accordion" href="#CollapseFive" aria-expanded="false" aria-controls="CollapseFive">
+            兄弟教会
+            </a>
+          </b>
+        </div>
+        <div id="CollapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="HeadingFive">
+          <div  class="list-group text-left">
+            <li class="list-group-item" (click)="openLink('http://www.ceciic.org/')">爱城华人福音教会</li>
+            <li class="list-group-item" (click)="openLink('http://www.sccc-ms.org/drupal/')">星城华人基督教会</li>
+            <li class="list-group-item" (click)="openLink('http://hccc-ms.org')">哈蒂斯堡华人基督教会</li>
+            <li class="list-group-item" (click)="openLink('http://www.glcaconline.org/')">拉法叶华人宣道会</li>
+          </div>         		
+        </div>
+      </div>   
+    </div>
+  </div>
+</div>
