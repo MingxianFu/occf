@@ -1,0 +1,26 @@
+.meeting{
+    margin-left:10px;
+    font-size: small;
+}
+
+.subtitle{
+    font-weight: bold;
+    font-size: small;
+}
+
+.dtborder{
+    border-radius: 25px;
+    border:1px dotted #73AD21;
+    margin-top: 10px;
+}
+
+td{
+    font-size: smaller;
+    text-align: left;
+}
+
+th{
+    background-color:rgba(192,192,192,0.3);
+    font-size: smaller; 
+    text-align: justify
+}

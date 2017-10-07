@@ -1,0 +1,24 @@
+<table class="table table-hover table-condensed">
+  <caption class="text-center"><strong>OXFORD 华人基督徒团契周五聚会安排</strong></caption>
+  <thead>      
+    <tr>
+      <th>日期</th>
+      <th>诗歌敬拜</th>
+      <th>查 经 内 容</th>
+      <th>带 领</th>
+      <th>茶点</th>         
+      <th>儿童活动</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let schedule of schedules">       
+    <tr>
+      <td>{{schedule.date}}</td>
+      <td>{{schedule.sonleader}}</td>
+      <td>{{schedule.studycontent}}</td>
+      <td>{{schedule.studyleader}}</td>
+      <td>{{schedule.snack}}</td>
+      <td>{{schedule.Babysiter}}</td>
+    </tr>
+  </tbody>
+  <tr><td colspan="6">*英文查经：Ryan/Rachel&nbsp;&nbsp;&nbsp;&nbsp;*儿童活动：熊慧/耀新/志强</td></tr>
+</table>
