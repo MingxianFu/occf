@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ScheduleComponent } from '../schedule/schedule.component';
+import { SchDataService } from '../sch-data.service';
 
 @Component({
   selector: 'app-schedule-c',
@@ -7,7 +7,22 @@ import { ScheduleComponent } from '../schedule/schedule.component';
   styleUrls: ['../schedule/schedule.component.css']
 })
 export class ScheduleCComponent{
+  schedules: Schedule[];
 
-  @Input() sche: ScheduleComponent;
+  constructor(private dataService: SchDataService) { }
+    ngOnInit() {
+    this.dataService.fetchData('assets/schedule-c.json').subscribe(schedules => {
+        this.schedules = schedules;
+    });   
+  }
 
+}
+
+interface Schedule{
+    date: string,
+    sonleader: string,
+    studycontent: string,
+    studyleader: string,
+    snack: string,
+    Babysiter: string
 }

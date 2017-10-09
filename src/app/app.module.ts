@@ -14,7 +14,6 @@ import { FellowshipCComponent } from './fellowship-c/fellowship-c.component';
 import { TestimonyCComponent } from './testimony-c/testimony-c.component';
 import { ScheduleCComponent } from './schedule-c/schedule-c.component';
 import { SchDataService } from './sch-data.service';
-import { FridayScheComponent } from './friday-sche/friday-sche.component';
 import { BibleStudyComponent } from './bible-study/bible-study.component';
 import { BibleStudyCComponent } from './bible-study-c/bible-study-c.component';
 import { LinksComponent } from './links/links.component';
@@ -30,7 +29,6 @@ import { LinksCComponent } from './links-c/links-c.component';
     FellowshipCComponent,
     TestimonyCComponent,
     ScheduleCComponent,
-    FridayScheComponent,
     BibleStudyComponent,
     BibleStudyCComponent,
     LinksComponent,
