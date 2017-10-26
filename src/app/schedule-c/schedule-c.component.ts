@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { SchDataService } from '../sch-data.service';
+import * as jsPDF from 'jspdf';
+declare var jquery:any;   // not required
+declare var $ :any;   // not required
 
 @Component({
   selector: 'app-schedule-c',
@@ -16,6 +19,20 @@ export class ScheduleCComponent{
     });   
   }
 
+  downloadPDF(){
+    $('#fridaySche').tableExport({type:'excel'});
+ 
+    /*$("#fridaySche").tableExport(
+      { type:'doc',
+        jspdf: {orientation: 'l',
+                format: 'a3',
+                margins: {left:20, right:20, top:20, bottom:20},
+                autotable: {styles: {fillColor: 'inherit', 
+                                    textColor: 'inherit'},
+                            tableWidth: 'auto'}
+              }
+      });*/
+    }
 }
 
 interface Schedule{

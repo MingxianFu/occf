@@ -1,30 +1,33 @@
 
 <div class="row">
   <div class="col-sm-8 text-justify">
-   <table class="table table-hover table-condensed">
-  <caption class="text-center"><strong>OXFORD Chinese Christian Fellowship  Schedule</strong></caption>
-  <thead>      
-    <tr>
-      <th>Date</th>
-      <th>Hymn</th>
-      <th>Verses</th>
-      <th>Leader</th>
-      <th>Snack</th>         
-      <th>Toddler</th>
-    </tr>
-  </thead>
-  <tbody *ngFor="let schedule of schedules">       
-    <tr>
-      <td>{{schedule.date}}</td>
-      <td>{{schedule.sonleader}}</td>
-      <td>{{schedule.studycontent}}</td>
-      <td>{{schedule.studyleader}}</td>
-      <td>{{schedule.snack}}</td>
-      <td>{{schedule.Babysiter}}</td>
-    </tr>
-  </tbody>
-  <tr><td colspan="6">*English Class：Ryan/Rachel&nbsp;&nbsp;&nbsp;&nbsp;*Children Class：Hui Xiong/Yaoxing/ZhiQiang</td></tr>
-</table>
+    <table class="table table-hover table-condensed" id="fridaySche">
+      <caption class="text-center"><strong>OXFORD Chinese Christian Fellowship  Schedule</strong>    <button type="button" class="btn btn-success btn-xs" (click)="downloadPDF()">Export PDF</button></caption>
+      <thead>      
+        <tr>
+          <th>Date</th>
+          <th>Hymn</th>
+          <th>Verses</th>
+          <th>Leader</th>
+          <th>Snack</th>         
+          <th>Toddler</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let schedule of schedules">       
+        <tr>
+          <td>{{schedule.date}}</td>
+          <td>{{schedule.sonleader}}</td>
+          <td>{{schedule.studycontent}}</td>
+          <td>{{schedule.studyleader}}</td>
+          <td>{{schedule.snack}}</td>
+          <td>{{schedule.Babysiter}}</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr><td colspan="3" class="text-center">*English Class: Ryan/Rachel</td>
+            <td colspan="3" class="text-center">*Children Class: Hui Xiong/Yaoxing/ZhiQiang</td></tr>
+      </tfoot>
+    </table>
   </div>
   <div class="col-sm-4 text-left dtborder">
     <h5 class="subtitle">Friday Bible Study</h5>

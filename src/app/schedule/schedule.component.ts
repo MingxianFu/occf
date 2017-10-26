@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SchDataService } from '../sch-data.service';
-
+declare var $;
 @Component({
   selector: 'app-schedule',
   templateUrl: './schedule.component.html',
@@ -15,6 +15,19 @@ export class ScheduleComponent implements OnInit {
         this.schedules = schedules;
     });   
   }
+
+  downloadPDF(){
+    $("#fridaySche").tableExport(
+      { type:'pdf',
+        jspdf: {orientation: 'p',
+                format: 'a3',
+                margins: {left:20, right:20, top:20, bottom:20},
+                autotable: {styles: {fillColor: 'inherit', 
+                                    textColor: 'inherit'},
+                            tableWidth: '800'}
+              }
+      });
+    }
 }
 
 interface Schedule{

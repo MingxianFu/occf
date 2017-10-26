@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-sm-8 text-justify">
-    <table class="table table-hover table-condensed">
-      <caption class="text-center"><strong>OXFORD 华人基督徒团契周五聚会安排</strong></caption>
+    <table class="table table-hover table-condensed" id="fridaySche">
+      <caption class="text-center"><strong>OXFORD 华人基督徒团契周五聚会安排</strong> <button type="button" class="btn btn-success btn-xs" (click)="downloadPDF()">Export Excel</button></caption>
       <thead>      
         <tr>
           <th>日期</th>
@@ -22,8 +22,11 @@
           <td>{{schedule.Babysiter}}</td>
         </tr>
       </tbody>
-      <tr><td colspan="6">*英文查经：Ryan/Rachel&nbsp;&nbsp;&nbsp;&nbsp;*儿童活动：熊慧/耀新/志强</td></tr>
-    </table>   
+      <tfoot>
+        <tr><td colspan="3">*英文查经：Ryan/Rachel</td>
+          <td colspan="3">*儿童活动：熊慧/耀新/志强</td></tr>
+      </tfoot>
+    </table>  
   </div>
   <div class="col-sm-4 text-justify dtborder">
     <span class="subtitle">星期五查经聚会</span>
