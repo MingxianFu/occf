@@ -1,106 +1,106 @@
 [
   {
-      "date": "09/01/17",
-      "sonleader": "Rongrong",
-      "studycontent": "1Timonthy 1",
-      "studyleader": "Jiang Shan",
-      "snack": "Mei Wang",
-      "Babysiter": "Wenlu"
-  },
-  {
-      "date": "09/08/17",
-      "sonleader": "Jason",
-      "studycontent": "1Timonthy 2",
-      "studyleader": "Xing-Cong",
-      "snack": "Rongrong",
-      "Babysiter": "Jinping"
-  },
-  {
-      "date": "09/15/17",
-      "sonleader": "Cindy",
-      "studycontent": "Special Meeting",
-      "studyleader": "",
-      "snack": "",
-      "Babysiter": "Jinping"
-  },
-  {
-      "date": "09/22/17",
-      "sonleader": "Zhonghui",
-      "studycontent": "1Timonthy 3",
-      "studyleader": "Yaoxin",
-      "snack": "Jin Xi",
-      "Babysiter": "Mingxian"
-  },
-  {
-      "date": "09/29/17",
-      "sonleader": "Rongrong",
-      "studycontent": "1Timonthy 4",
-      "studyleader": "Zhiqiang",
-      "snack": "Mingxian",
-      "Babysiter": "YunYun"
-  },
-  {
-      "date": "10/06/17",
-      "sonleader": "Jason",
+      "date": "12/01/17",
+      "sonleader": "Xingcong",
       "studycontent": "TBA",
-      "studyleader": "Leo",
-      "snack": "Wei Zhai",
-      "Babysiter": "Wei Zhai"
-  },
-  {
-      "date": "10/13/17",
-      "sonleader": "Jin Xi",
-      "studycontent": "1Timonthy 5",
-      "studyleader": "Jianping",
-      "snack": "Cindy",
-      "Babysiter": "Jinping"
-  },
-  {
-      "date": "10/20/17",
-      "sonleader": "Cindy",
-      "studycontent": "1Timonthy 6",
-      "studyleader": "Xing-Cong",
-      "snack": "Jianping",
-      "Babysiter": "Wenlu"
-  },
-  {
-      "date": "10/27/17",
-      "sonleader": "Jason",
-      "studycontent": "2Timonthy 1",
-      "studyleader": "Zhiqiang",
-      "snack": "Rongrong",
-      "Babysiter": "Mingxian"
-  },
-  {
-      "date": "11/03/17",
-      "sonleader": "Rongrong",
-      "studycontent": "2Timonthy 2",
-      "studyleader": "Jiang Shan",
+      "studyleader": "Pastor Gao",
       "snack": "Mei Wang",
       "Babysiter": "Mei Wang"
   },
   {
-      "date": "11/10/17",
-      "sonleader": "Jason",
-      "studycontent": "2Timonthy 3",
-      "studyleader": "Jianping",
+      "date": "12/08/17",
+      "sonleader": "Qingyin",
+      "studycontent": "Titus 1，2：1-8",
+      "studyleader": "Shan Jiang",
       "snack": "Wei Zhai",
-      "Babysiter": "Wenlu"
-  },
-  {
-      "date": "11/17/17",
-      "sonleader": "Cindy",
-      "studycontent": "2Timonthy 4",
-      "studyleader": "Jiang Shan",
-      "snack": "Yibin",
       "Babysiter": "Wei Zhai"
   },
   {
-      "date": "11/25/17",
-      "sonleader": "Mei Wang",
-      "studycontent": "Thanksgiving Celebration",
+      "date": "12/15/17",
+      "sonleader": "Jason",
+      "studycontent": "Titus 2：9-15，3",
+      "studyleader": "Zhiqiang",
+      "snack": "Mingxian",
+      "Babysiter": "Mingxian"
+  },
+  {
+      "date": "12/22/17",
+      "sonleader": "",
+      "studycontent": "Winter Conference (12/21 - 25)",
       "studyleader": "",
       "snack": "",
+      "Babysiter": ""
+  },
+  {
+      "date": "12/29/17",
+      "sonleader": "",
+      "studycontent": "Happy New Year！",
+      "studyleader": "",
+      "snack": "",
+      "Babysiter": ""
+  },
+  {
+      "date": "01/05/18",
+      "sonleader": "Cindy",
+      "studycontent": "Philemon 1",
+      "studyleader": "Shan Jiang",
+      "snack": "Wenlu",
+      "Babysiter": "Jingping"
+  },
+  {
+      "date": "01/12/18",
+      "sonleader": "Cindy",
+      "studycontent": "Hebrews 1",
+      "studyleader": "Shan Jiang",
+      "snack": "Qing Feng",
+      "Babysiter": "Mei Wang"
+  },
+  {
+      "date": "01/19/18",
+      "sonleader": "Xi Jing",
+      "studycontent": "TBA",
+      "studyleader": "Leo",
+      "snack": "Yibing",
+      "Babysiter": "Wenlu"
+  },
+  {
+      "date": "01/26/18",
+      "sonleader": "Rongrong",
+      "studycontent": "Hebrews 2",
+      "studyleader": "Jianping",
+      "snack": "Mei Wang",
+      "Babysiter": "Mei Wang"
+  },
+  {
+      "date": "02/02/18",
+      "sonleader": "Mei Wang",
+      "studycontent": "Hebrews 3",
+      "studyleader": "Zhiqiang",
+      "snack": "jingping",
+      "Babysiter": "Wei Zhai"
+  },
+  {
+      "date": "02/09/18",
+      "sonleader": "Zhonghui",
+      "studycontent": "Hebrews 4",
+      "studyleader": "Yaoxing",
+      "snack": "Xi Jing",
+      "Babysiter": "Jingping"
+  },
+  {
+      "date": "02/16/18",
+      "sonleader": "Rongrong",
+      "studycontent": "Chinese New Year Potluck",
+      "studyleader": "",
+      "snack": "",
+      "Babysiter": "Mingxian"
+  },
+  {
+      "date": "02/23/18",
+      "sonleader": "Cindy",
+      "studycontent": "Hebrews 5",
+      "studyleader": "Xingcong",
+      "snack": "Rongrong",
       "Babysiter": "Mingxian"
   }
 ]
